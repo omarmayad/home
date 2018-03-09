@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
 .body{
     margin: 0 auto;
 }
@@ -36,30 +38,14 @@
     height: 116px;
     margin: 3px 43px;
 }
-.btnText{
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 4px 0;
-    color: #fff;
-    font-size: 16px;
-    text-shadow: 1px 2px 2px #333;
-    display: table-cell;
-    line-height: 18px;
-    padding: 0!important;
-    vertical-align: middle;
-    position: relative!important;
-}
-
 
 .jumbotron h2 {
-    margin-bottom: 15px;
+    margin: 25px;
     color :#0d5da9;
     text-align: center;
     font-size: 18px;
     font-style: italic;
     font-family: "Open Sans";
-    font-weight: 100;
 }
 .jumbotron h3{
     font-family: "Open Sans";
@@ -68,7 +54,6 @@
     position: relative;
     top: -8px;
     color :#0d5da9;
-    font-weight: 100;
     font-style: italic;
 }
 footer{
@@ -149,7 +134,7 @@ footer #footer-disclaimers p {
     margin-left: 0
 }
 
-.radio-icon label.inline.selected,
+
 .radio-icon label.inline:hover {
     border: 3px solid #f5a144
 }
