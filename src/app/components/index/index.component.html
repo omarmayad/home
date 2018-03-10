@@ -12,41 +12,7 @@
     <div class="logo">
       <img class="img-fluid" src="">
     </div>
-    <div class="jumbotron">
-      <h2>No registration, no login required to compare. Completely free!</h2>
-      <h1>Choose your loan type</h1>
-      <div id="fields">
-
-        <div class="bills-field-wrapper bills-radio-wrapper bills-radio-wrapper-home radio-icon">
-        
-        
-          <label class="inline radio-label" for="home-refinance" id="label-home-home-refinance">
-            <input type="radio" name="home" id="home-refinance" value="home-refinance">
-            
-              <span class="radio-label-icon radio-label-icon-home-refinance"></span>
-            
-            <span class="radio-label-text-container">
-              <span class="radio-label-text">Home Refinance</span>
-            </span>
-          </label>
-        
-          <label class="inline radio-label selected" for="home-purchase" id="label-home-home-purchase">
-            <input type="radio" name="home" id="home-purchase" value="home-purchase">
-            
-              <span class="radio-label-icon radio-label-icon-home-purchase"></span>
-            
-            <span class="radio-label-text-container">
-              <span class="radio-label-text">Home Purchase</span>
-            </span>
-          </label>
-        
-         
-          
-        
-        </div><div class=""><input type="hidden" name="universal_leadid" id="leadid_token" value="2BF2E75F-3B80-09B4-7C0D-34598B55E57F"></div></div>
-      
-      <h3>No SSN required. Free quotes! </h3>
-    </div>
+    <app-question-one *ngIf="currentQuestion=='QuestionOne'" (messageEvent)="receiveEvent($event)"></app-question-one>
   <footer>
       <div id="footer-disclaimers">
           <p>

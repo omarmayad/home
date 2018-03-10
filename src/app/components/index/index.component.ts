@@ -1,3 +1,4 @@
+import { Router, NavigationEnd } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
-  constructor() { }
+  questionsList:any=["QuestionOne","QuestionTwo","QuestionThree",
+  "QuestionFour","QuestionFive","QuestionSix","QuestionSeven","QuestionEight","QuestionNine",
+  "QuestionTen","QuestionEleven","QuestionTwelve","QuestionThirteen","QuestionFourteen","QuestionFifteen",
+  "QuestionSixteen","QuestionSeventeen","QuestionEighteen","QuestionNineteen","QuestionTweenty","QuestionTweentyone",
+  "QuestionTweentytwo","QuestionTweentythree","QuestionTweentyfour","QuestionTweentyfive"];
+  index = 0;
+  currentQuestion=this.questionsList[this.index]; 
+  AllTheSelectedOptions=[] ;
+  constructor(private router :Router){}
 
   ngOnInit() {
   }
-
+  receiveEvent($event){
+    
+    this.index++;
+    this.currentQuestion=this.questionsList[this.index];
+    this.AllTheSelectedOptions.push($event);
+    if(this.index == 25){
+      //go to final page
+      localStorage.setItem('options', JSON.stringify(this.AllTheSelectedOptions));
+      this.router.navigateByUrl('/continue');
+    }
+}
 }
