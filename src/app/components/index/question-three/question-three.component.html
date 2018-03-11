@@ -1,3 +1,53 @@
-<p>
-  question-three works!
-</p>
+<div class="jumbotron">
+  
+  <h1>What type of property is it?</h1>
+  <div id="fields">
+
+    <div class="bills-field-wrapper bills-radio-wrapper bills-radio-wrapper-credit radio-icon">
+    
+    
+      <label class="inline radio-label" for="property-single" id="label-property-single" 
+      (click)="nextQuestion('Single')">
+        <input type="radio" name="property" id="property-single" value="SingleFamily">
+        
+          <span class="radio-label-icon radio-label-icon-property-single"></span>
+        
+        <span class="radio-label-text-container">
+          <span class="radio-label-text">Single Family</span>
+        </span>
+      </label>
+    
+      <label class="inline radio-label" for="property-condo" id="label-property-condo" 
+      (click)="nextQuestion('Townhome')">
+        <input type="radio" name="property" id="property-condo" value="condo">
+        
+          <span class="radio-label-icon radio-label-icon-property-condo"></span>
+        
+        <span class="radio-label-text-container">
+          <span class="radio-label-text">Townhome</span>
+        </span>
+      </label>
+      <label class="inline radio-label" for="property-multi" id="label-property-multi" 
+      (click)="nextQuestion('Multi-unit')">
+        <input type="radio" name="property" id="property-multi" value="property-multi">
+        
+          <span class="radio-label-icon radio-label-icon-property-multi"></span>
+        
+        <span class="radio-label-text-container">
+          <span class="radio-label-text">Multi Unit</span>
+        </span>
+      </label>
+      <label class="inline radio-label" for="property-mobile" id="label-property-mobile" 
+      (click)="nextQuestion('Condo')">
+        <input type="radio" name="property" id="property-mobile" value="property-mobile">
+        
+          <span class="radio-label-icon radio-label-icon-property-mobile"></span>
+        
+        <span class="radio-label-text-container">
+          <span class="radio-label-text">Condo</span>
+        </span>
+      </label>
+    </div><div class=""><input type="hidden" name="universal_leadid" id="leadid_token" value="2BF2E75F-3B80-09B4-7C0D-34598B55E57F"></div></div>
+  
+ 
+</div>

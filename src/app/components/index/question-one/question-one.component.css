@@ -1,0 +1,20 @@
+.radio-label-icon-home-refinance{
+    background-image: url('/assets/1.png');
+    background-repeat: no-repeat;
+    /*background-position: -8px 15px;
+    width: 75px;
+    height: 116px;*/
+    width: 140px;
+    background-position: 17px 0px;
+    height: 125px;
+}
+.radio-label-icon-home-purchase{
+    background-image: url('/assets/2.png');
+    background-repeat: no-repeat;
+    /*background-position: -204px -840px;
+    width: 75px;
+    height: 116px;*/
+    width: 140px;
+    background-position: 17px 0px;
+    height: 125px;
+}

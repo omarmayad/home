@@ -13,6 +13,8 @@
       <img class="img-fluid" src="">
     </div>
     <app-question-one *ngIf="currentQuestion=='QuestionOne'" (messageEvent)="receiveEvent($event)"></app-question-one>
+    <app-question-two *ngIf="currentQuestion=='QuestionTwo'" (messageEvent)="receiveEvent($event)"></app-question-two>
+    <app-question-three *ngIf="currentQuestion=='QuestionThree'" (messageEvent)="receiveEvent($event)"></app-question-three>
   <footer>
       <div id="footer-disclaimers">
           <p>

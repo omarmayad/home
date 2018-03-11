@@ -1,0 +1,43 @@
+h5{
+
+    color: #39A544;
+    text-align: center;
+}
+h1{
+    margin: 25px 0px;
+}
+.radio-label-icon-credit-ex{
+    background-image: url('/assets/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -5px -149px;
+    width: 150px;
+    height: 120px;
+}
+.radio-label-icon-credit-vg{
+    background-image: url('/assets/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -315px -149px;
+    width: 150px;
+    height: 120px;
+}
+.radio-label-icon-credit-g{
+    background-image: url('/assets/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -5px -319px;
+    width: 150px;
+    height: 120px;
+}
+.radio-label-icon-credit-f{
+    background-image: url('/assets/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -162px -319px;
+    width: 150px;
+    height: 120px;
+}
+.radio-label-icon-credit-p{
+    background-image: url('/assets/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -162px -319px;
+    width: 150px;
+    height: 120px;
+}
