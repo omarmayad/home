@@ -118,11 +118,13 @@ footer #footer-disclaimers p {
     font-size: 16px;
     text-shadow: 1px 2px 2px #333
 }
-
+.btn{
+    width : 200px;
+    margin-top: 25px;
+}
 .radio-icon label.inline:first-child {
     margin-left: 0
 }
-
 
 .radio-icon label.inline:hover {
     border: 3px solid #f5a144
