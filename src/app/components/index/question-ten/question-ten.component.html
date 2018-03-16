@@ -1,3 +1,19 @@
-<p>
-  question-ten works!
-</p>
+<div class="jumbotron">
+  
+  <h1>Second Mortgage Estimated Interest Rate</h1>
+  <h6>(estimated mortgage balance)</h6>
+  
+  <div id="fields">
+    
+      <div class="bills-field-wrapper bills-slider-wrapper slider--thick">
+        <h5><strong>{{sliderValue }}%</strong></h5>
+         
+          <input [value]="sliderValue" (input)="sliderValue = $event.target.value"  type="range" min="1" max="10" value="3" step="1" class="slider" id="myRange">
+          
+                <div class="bills-field-wrapper bills-submit-wrapper">
+                  <button class="btn btn-lg btn-success" (click)="nextQuestion()">Continue >></button>
+                </div>
+                <div class="">
+                  <input type="hidden" name="universal_leadid" id="leadid_token" value="2BF2E75F-3B80-09B4-7C0D-34598B55E57F">
+                </div></div>
+    

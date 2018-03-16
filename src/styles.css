@@ -5,8 +5,25 @@
     margin: 0 auto;
 }
 .logo{
+   
     min-height: 120px;
     background-color: #fff;
+    
+}
+.logoText{
+   margin-top:50px;
+    margin-left: 25px;
+    color: #182B3B;
+    font-family: Segoe UI;
+    font-weight: bold;
+}
+h3 label {
+    display: block;
+   font-size: 35px;
+}
+#secondlabel{
+margin-left: 5px;
+margin-top:-24px; 
 }
 .jumbotron{
     background-color: #D6E3EB;
@@ -55,8 +72,10 @@ footer{
     text-rendering: optimizeLegibility;
 }
 footer #footer-disclaimers p {
+    text-align: left;
     font-size: 13px;
     line-height: 14px;
+    width : 100%;
 }
 
 .radio-icon {
@@ -120,7 +139,7 @@ footer #footer-disclaimers p {
 }
 .btn{
     width : 200px;
-    margin-top: 25px;
+   
 }
 .radio-icon label.inline:first-child {
     margin-left: 0

@@ -19,6 +19,9 @@ export class IndexComponent implements OnInit {
 
   ngOnInit() {
   }
+  goTo(){
+    this.router.navigateByUrl('/components/policy');
+  }
   receiveEvent($event){
     
     this.index++;
@@ -29,5 +32,6 @@ export class IndexComponent implements OnInit {
       localStorage.setItem('options', JSON.stringify(this.AllTheSelectedOptions));
       this.router.navigateByUrl('/continue');
     }
+    
 }
 }

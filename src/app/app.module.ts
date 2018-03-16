@@ -28,9 +28,11 @@ import {QuestionTweentytwoComponent} from './components/index/question-tweentytw
 import {QuestionTweentythreeComponent} from './components/index/question-tweentythree/question-tweentythree.component';
 import {QuestionTweentyfourComponent} from './components/index/question-tweentyfour/question-tweentyfour.component';
 import {QuestionTweentyfiveComponent} from './components/index/question-tweentyfive/question-tweentyfive.component';
+import { PolicyComponent } from './components/policy/policy.component';
 
 const appRoutes: Routes = [
   { path: 'index', component: IndexComponent },
+  {path: 'policy' , component: PolicyComponent},
   { path: '**', component: IndexComponent },
 ];
 
@@ -62,7 +64,8 @@ const appRoutes: Routes = [
     QuestionTweentytwoComponent,
     QuestionTweentythreeComponent,
     QuestionTweentyfourComponent,
-    QuestionTweentyfiveComponent
+    QuestionTweentyfiveComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule,
