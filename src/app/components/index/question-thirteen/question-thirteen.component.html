@@ -1,3 +1,36 @@
-<p>
-  question-thirteen works!
-</p>
+
+                <div class="jumbotron">
+  
+                    <h1>What is your phone number?</h1>
+                
+                    
+                    
+                    <div id="fields">
+                      
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                              
+                              <div class="col-md-auto">
+                                  <h5><strong>{{inputValue }}</strong></h5>
+                                  <input class="input" [value]="inputValue" (input)="inputValue = $event.target.value"  type="text" id="phone" placeholder="Phone number">
+                              </div>
+                             
+                            </div>
+                            <div class="row justify-content-md-center">
+                              
+                                <div class="col-md-auto">
+                                    <button class="btn btn-lg btn-success" (click)="nextQuestion()">Continue >></button>
+                                </div>
+                               
+                              </div>
+                            
+                          
+                  </div>
+                            
+                         </div>
+                                 
+                                  <div class="">
+                                    <input type="hidden" name="universal_leadid" id="leadid_token" value="2BF2E75F-3B80-09B4-7C0D-34598B55E57F">
+                                  </div></div>
+                      
+    

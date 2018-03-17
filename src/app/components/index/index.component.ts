@@ -27,7 +27,7 @@ export class IndexComponent implements OnInit {
     this.index++;
     this.currentQuestion=this.questionsList[this.index];
     this.AllTheSelectedOptions.push($event);
-    if(this.index == 25){
+    if(this.index <= 25){
       //go to final page
       localStorage.setItem('options', JSON.stringify(this.AllTheSelectedOptions));
       this.router.navigateByUrl('/continue');

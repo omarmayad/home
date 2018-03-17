@@ -24,10 +24,6 @@ import { QuestionEighteenComponent } from './components/index/question-eighteen/
 import { QuestionNineteenComponent } from './components/index/question-nineteen/question-nineteen.component';
 import { QuestionTweentyComponent } from './components/index/question-tweenty/question-tweenty.component';
 import { QuestionTweentyoneComponent } from './components/index/question-tweentyone/question-tweentyone.component';
-import {QuestionTweentytwoComponent} from './components/index/question-tweentytwo/question-tweentytwo.component';
-import {QuestionTweentythreeComponent} from './components/index/question-tweentythree/question-tweentythree.component';
-import {QuestionTweentyfourComponent} from './components/index/question-tweentyfour/question-tweentyfour.component';
-import {QuestionTweentyfiveComponent} from './components/index/question-tweentyfive/question-tweentyfive.component';
 import { PolicyComponent } from './components/policy/policy.component';
 
 const appRoutes: Routes = [
@@ -61,10 +57,6 @@ const appRoutes: Routes = [
     QuestionNineteenComponent,
     QuestionTweentyComponent,
     QuestionTweentyoneComponent,
-    QuestionTweentytwoComponent,
-    QuestionTweentythreeComponent,
-    QuestionTweentyfourComponent,
-    QuestionTweentyfiveComponent,
     PolicyComponent
   ],
   imports: [
