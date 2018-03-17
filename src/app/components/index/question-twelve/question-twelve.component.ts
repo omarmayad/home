@@ -16,7 +16,7 @@ export class QuestionTwelveComponent implements OnInit {
   ngOnInit() {
   }
  
-  nextQuestion(selected) {
+  nextQuestion() {
       
     this.messageEvent.emit({question: 'QuestionEleven', selected: this.inputValue});
   }
