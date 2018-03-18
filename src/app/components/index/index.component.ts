@@ -19,9 +19,7 @@ export class IndexComponent implements OnInit {
 
   ngOnInit() {
   }
-  goTo(){
-    this.router.navigateByUrl('/components/policy');
-  }
+
   receiveEvent($event){
     
     this.index++;
@@ -30,7 +28,7 @@ export class IndexComponent implements OnInit {
     if(this.index <= 25){
       //go to final page
       localStorage.setItem('options', JSON.stringify(this.AllTheSelectedOptions));
-      this.router.navigateByUrl('/continue');
+     // this.router.navigateByUrl('/continue');  I need to change this route to whatever the end of the questions go
     }
     
 }
