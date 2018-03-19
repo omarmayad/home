@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Landing page</title>
+  <title>Today's Lowest Rates</title>
 
 </head>
 <body>
@@ -33,9 +33,20 @@
     <app-question-nineteen *ngIf="currentQuestion=='QuestionNineteen'" (messageEvent)="receiveEvent($event)"></app-question-nineteen>
     <app-question-tweenty *ngIf="currentQuestion=='QuestionTweenty'" (messageEvent)="receiveEvent($event)"></app-question-tweenty>
     <app-question-tweentyone *ngIf="currentQuestion=='QuestionTweentyone'" (messageEvent)="receiveEvent($event)"></app-question-tweentyone>
-
+    <app-thank-you *ngIf="currentQuestion=='ThankYou'" (messageEvent)="receiveEvent($event)"></app-thank-you>
 
   <footer>
+      <div class="container bar col-md-4 offset-md-4">
+
+          <div class="progress ">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" [ngStyle]="{'width':percentage+'%'}">
+                <span class="sr-only">{{percentage}}% Complete (success)</span>
+              </div>
+              
+             
+          </div>
+          
+          </div>
       <div id="footer-disclaimers">
           <p>
             <a [routerLink]="['policy'] " target="_blank" id="privacy-policy" class="open-modal">Privacy Policy</a> |

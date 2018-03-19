@@ -25,6 +25,7 @@ import { QuestionNineteenComponent } from './components/index/question-nineteen/
 import { QuestionTweentyComponent } from './components/index/question-tweenty/question-tweenty.component';
 import { QuestionTweentyoneComponent } from './components/index/question-tweentyone/question-tweentyone.component';
 import { PolicyComponent } from './components/policy/policy.component';
+import { ThankYouComponent } from './components/index/thank-you/thank-you.component';
 
 const appRoutes: Routes = [
   { path: 'index', component: IndexComponent },
@@ -57,7 +58,8 @@ const appRoutes: Routes = [
     QuestionNineteenComponent,
     QuestionTweentyComponent,
     QuestionTweentyoneComponent,
-    PolicyComponent
+    PolicyComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,

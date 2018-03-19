@@ -1,7 +1,7 @@
 <div class="jumbotron">
   
-    <h1>Interest Rate</h1>
-    <h6>(estimated interest rate)</h6>
+    <h1>Estimated Interest Rate</h1>
+  
     
     <div id="fields">
       
@@ -11,7 +11,14 @@
             <input [value]="sliderValue" (input)="sliderValue = $event.target.value" type="range" min="1" max="10" value="3" step="0.25" class="slider" id="myRange">
             
                   <div class="bills-field-wrapper bills-submit-wrapper">
-                    <button class="btn btn-lg btn-success" (click)="nextQuestion()">Continue >></button>
+                      <div class="container">
+                          <div class="row justify-content-md-center">
+                            
+                            <div class="col-md-auto">
+                                <button class="btn btn-lg btn-success" (click)="nextQuestion()">Continue >></button>
+                              </div>
+                            
+                            </div>
                   </div>
                   <div class="">
                     <input type="hidden" name="universal_leadid" id="leadid_token" value="2BF2E75F-3B80-09B4-7C0D-34598B55E57F">
