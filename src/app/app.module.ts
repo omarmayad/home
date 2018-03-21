@@ -30,6 +30,7 @@ import { ThankYouComponent } from './components/index/thank-you/thank-you.compon
 const appRoutes: Routes = [
   { path: 'index', component: IndexComponent },
   {path: 'policy' , component: PolicyComponent},
+  {path:'question-eleven', component: QuestionElevenComponent},
   { path: '**', component: IndexComponent },
 ];
 
