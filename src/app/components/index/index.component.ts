@@ -1,6 +1,7 @@
 import { Router, NavigationEnd } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
+ declare var $ : any;
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
@@ -19,8 +20,17 @@ export class IndexComponent implements OnInit {
   constructor(private router :Router){}
 
   ngOnInit() {
+    $("#the_lights").fadeTo(1,0);
+    $(".soft").click(function () {
+         document.getElementById("the_lights").style.display="block";
+         $("#the_lights").fadeTo("slow",0.8);
+    });
+    $("#on").click(function () {
+      document.getElementById("the_lights").style.display="block";
+      $("#the_lights").fadeTo("slow",0);
+ });
+ 
   }
-
   receiveEvent($event){
     
     this.index++;

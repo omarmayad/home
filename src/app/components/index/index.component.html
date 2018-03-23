@@ -8,10 +8,11 @@
 
 </head>
 <body>
-  <div class="body">
+  <div class="body" >
     <div class="logo">
       <h3 class="logoText"><label >Todays</label><label  id="secondlabel">Lowrates.com</label></h3>
     </div>
+    <div id = "standout" class="soft">
     <app-question-one *ngIf="currentQuestion=='QuestionOne'" (messageEvent)="receiveEvent($event)"></app-question-one>
     <app-question-two *ngIf="currentQuestion=='QuestionThree'" (messageEvent)="receiveEvent($event)"></app-question-two>
     <app-question-three *ngIf="currentQuestion=='QuestionTwo'" (messageEvent)="receiveEvent($event)"></app-question-three>
@@ -34,9 +35,11 @@
     <app-question-tweenty *ngIf="currentQuestion=='QuestionTweenty'" (messageEvent)="receiveEvent($event)"></app-question-tweenty>
     <app-question-tweentyone *ngIf="currentQuestion=='QuestionTweentyone'" (messageEvent)="receiveEvent($event)"></app-question-tweentyone>
     <app-thank-you *ngIf="currentQuestion=='ThankYou'" (messageEvent)="receiveEvent($event)"></app-thank-you>
-
-  <footer>
-      <div class="container bar col-md-4 offset-md-4">
+   
+  </div>
+    <div id="the_lights"></div>
+  <footer >
+      <div class="container bar col-md-4 offset-md-4" >
 
           <div class="progress ">
             <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" [ngStyle]="{'width':percentage+'%'}">
