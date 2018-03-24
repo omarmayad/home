@@ -8,11 +8,11 @@
 
 </head>
 <body>
-  <div class="body" >
+  <div class="body " >
     <div class="logo">
       <h3 class="logoText"><label >Todays</label><label  id="secondlabel">Lowrates.com</label></h3>
     </div>
-    <div id = "standout" class="soft">
+    <div id = "standout" class="soft " >
     <app-question-one *ngIf="currentQuestion=='QuestionOne'" (messageEvent)="receiveEvent($event)"></app-question-one>
     <app-question-two *ngIf="currentQuestion=='QuestionThree'" (messageEvent)="receiveEvent($event)"></app-question-two>
     <app-question-three *ngIf="currentQuestion=='QuestionTwo'" (messageEvent)="receiveEvent($event)"></app-question-three>

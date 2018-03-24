@@ -25,7 +25,7 @@ export class IndexComponent implements OnInit {
          document.getElementById("the_lights").style.display="block";
          $("#the_lights").fadeTo("slow",0.8);
     });
-    $("#on").click(function () {
+    $(".on").click(function () {
       document.getElementById("the_lights").style.display="block";
       $("#the_lights").fadeTo("slow",0);
  });
