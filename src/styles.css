@@ -314,10 +314,11 @@ footer #footer-disclaimers p {
         display:none;
      }
      #standout{
-          padding:5px;
+          padding:0px;
           background-color:white;
           position:relative;
           z-index:1000;
+
          
      }
   
