@@ -17,6 +17,7 @@ export class IndexComponent implements OnInit {
   percentage=15;
   currentQuestion=this.questionsList[this.index]; 
   AllTheSelectedOptions=[] ;
+  skip=0;
   constructor(private router :Router){}
 
   ngOnInit() {
@@ -40,22 +41,21 @@ export class IndexComponent implements OnInit {
     if(this.AllTheSelectedOptions[7]){
       if(this.AllTheSelectedOptions[7].selected == "No" && !this.AllTheSelectedOptions[7].passed){
         this.AllTheSelectedOptions[7].passed = true;
+        this.skip=2;
         this.index+=2;
         this.percentage += (90/this.questionsList.length +1);
         this.currentQuestion=this.questionsList[this.index];
-    
       }
     }
  
-    if(this.AllTheSelectedOptions[16]){
-      console.log("working",this.currentQuestion);
-      if(this.AllTheSelectedOptions[16].selected == "No" && !this.AllTheSelectedOptions[16].passed){
-       
-        this.AllTheSelectedOptions[16].passed = true;
+    if(this.AllTheSelectedOptions[18-this.skip]){
+      
+      if(this.AllTheSelectedOptions[18-this.skip].selected == "No" && !this.AllTheSelectedOptions[18-this.skip].passed){
+        
+        this.AllTheSelectedOptions[18-this.skip].passed = true;
         this.index+=2;
         this.percentage += (90/this.questionsList.length +7);
         this.currentQuestion=this.questionsList[this.index];
-    
       }
     }
     
